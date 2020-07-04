@@ -1,0 +1,151 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1, 21 November 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{textcomp}
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{2E64FE}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+%% sample.bib contains your publications
+% \addbibresource{sample.bib}
+\begin{document}
+
+\name{divyanshu dubey}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \location{Madhya Pradesh, Gwalior}
+  \email{ddubey012@gmail.com}
+  \phone{Phone}
+  \github{github.com/bleed101}
+  \linkedin{linkedin.com/in/d-dubey}
+%   \github{} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{HPC Sphere Pvt. Ltd. }{Position-Game Developer(Intern)
+}{06-2019 to 07-2019}{New Delhi}
+\begin{itemize}
+\item  Made flow chart to develop the understanding of the game
+and to also track the bugs through these flow diagrams
+\item Wrote C-Sharp scripts to determine the mechanics and
+gameplay of new software.
+\item Troubleshot game programming to ensure no mistakes are
+made, this was done on a daily basis.
+\item Oversee the testing of the game to determine whether it is
+up to standards.
+\item  Delivered APKs of the game to the client on a daily basis.
+\end{itemize}
+
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+\cvsection{Projects}
+\cvp{Devolt\hspace{1.4em}}{}{09-2018 to 11-2019}{}
+{
+ Devolt is a 2-Dimension game that was developed on python3.7. I
+used the library named PyCharm which is basically used for
+developing games in python. I used some concepts of objectoriented programming like classes and creating corresponding
+instances, I used Sqlite3 to handle the database and GUI panel I
+used Tkinter. I also used basic physics of class 11th, topic named
+equation of motion, Kinematics, and projectiles. This game consists
+of player and enemy, you have to kill the enemy before it kills you.
+}
+
+\divider
+\cvp{CUBA\hspace{1.4em}}{}{12-2018 to 01-2019}{}
+{
+CUBA was developed on a Unity engine, it is a 3-Dimension game. I
+wrote C\# scripts for movements and in-game functioning. I used
+OOP\textquotesingle s concepts, used animation for switching between levels, this
+game consists of thirteen levels. CUBA was developed for windows
+platform, I used third party software to combine the binary files
+and .dll files to make executable (.exe) file. The player has to dodge
+the obstacles to complete the levels.
+}
+
+\divider
+
+\cvp{Techload}{}{08-2019 to 10-2019}{}
+{
+TechLoad is a blogging website, where one can post their blogs
+related to technology. User can also manage their blogs by
+registering for the tech blog. We have used HTML, CSS, Javascript
+in the frontend, and backend was handled in Django
+}
+\divider
+
+\begin{adjustwidth}{}{-8cm}
+\vspace{15em}
+{\faCalendar\hspace{.5em}}{JULY3,2020 }{\hspace{13em}DIVYANSHU DUBEY }{\hspace{12em} {\mailsymbol\hspace{.5em}}ddubey012@gmail.com}
+\end{adjustwidth}
+
+\end{document}
